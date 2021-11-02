@@ -1,0 +1,84 @@
+﻿@page
+@model Registration_Form.Pages.SIgnUpModel
+@{
+}
+<style>
+    .text-left {
+        background-image: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105__480.png);
+        background-size: cover;
+    }
+
+    fieldset {
+        background-color: cadetblue;
+        background-repeat: no-repeat;
+        background-size: 1150px 1000px;
+    }
+
+    legend {
+        background-color: lavender;
+        color: white;
+        padding: 5px 10px;
+    }
+
+    #regFrom {
+        width: 700px;
+        padding: 10px;
+        border: 5px solid gray;
+        box-shadow: 5px 5px 5px 5px inset;
+    }
+</style>
+
+<div class="text-left">
+    <div id="regFrom">
+        <form>
+            <fieldset>
+                <legend><b>Sign-Up</b></legend>
+                <label for="fname"><b>FirstName:</b></label>&emsp;<input type="text" id="fname" name="fname" required>
+                &emsp;&emsp;
+                <label for="lname"><b>LastName:</b></label>&emsp;<input type="text" id="lname" name="lname"><br />
+                <br />
+                <label for="Gmail"><b>Gmail:</b></label>&emsp;<input type="text" id="Gmail" name="Gmail" placeholder="abc@gmail.com" />
+                &emsp;&emsp;&emsp;&emsp;
+                <label for="UserName"><b>UserName:</b></label>&emsp;<input type="text" id="UserName" name="UserName" required /><br />
+                <br />
+                <label for="Password"><b>PassWord:</b></label>&emsp; <input type="text" id="Password" name="V" required />
+                &emsp;&emsp;&emsp;&emsp;
+                <label for="Age"><b>Age:</b></label>&emsp; <input type="text" id="Password" name="V" required />
+                <br /><br />
+                <p><b>Gender:</b></p>
+                <label for="Male">Male</label>
+                <input type="radio" id="Male" name="Gender" value="male">
+                |
+                <label for="FeMale">FeMale</label>
+                <input type="radio" id="FeMale" name="Gender" value="male">
+                |
+                <label for="Other">Other</label>
+                <input type="radio" id="Other" name="Gender" value="Other"><br />
+                <p><b>Material Status</b></p>
+                <select name="materialStatus" id="materialStatus">
+                    <option value="Married">Married</option>
+                    <option value="UnMarried">UnMarried</option>
+                </select><br />
+                <label for="Contact"><b>Contact:</b></label><br />
+                <input type="text" id="Contact" name="Contact" required /><br />
+
+                <p><b>Requried Document</b></p>
+                <label for="AddhharCard">AddharCard</label>
+                <input type="checkbox" id="AddharCard" name="AddharCard" value="Addhar" />
+
+                <label for="PanCard">PanCard</label>
+                <input type="checkbox" id="PanCard" name="PanCard" value="Pan" />
+
+                <label for="Driving_Lic">Driving Liciense</label>
+                <input type="checkbox" id="Driving_Lic" name="Driving_Lic" value="Dl" />
+
+                <label for="Matric_Document">MatricDocument</label>
+                <input type="checkbox" id="Matric_Document" name="Matric_Document" value="Matric" /><br />
+
+                <label for="Inter_Document">InterDocument</label>
+                <input type="checkbox" id="Inter_Document" name="Inter_Document" value="Inter" /><br />
+                <input type="submit" value="submit">
+            </fieldset>
+        </form>
+    </div>
+</div>
